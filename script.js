@@ -1,75 +1,33 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const authModal = document.getElementById('auth-modal');
-    const loginBtn = document.getElementById('login-btn');
-    const logoutBtn = document.getElementById('logout-btn');
-    const closeModal = document.querySelector('.close');
-    const authForm = document.getElementById('auth-form');
-    const toggleAuth = document.getElementById('toggle-auth');
-    const authTitle = document.getElementById('auth-title');
-    const userGreeting = document.getElementById('user-greeting');
+// Wait for the document to load before running the script 
+(function ($) {
+  
+  // We use some Javascript and the URL #fragment to hide/show different parts of the page
+  // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Linking_to_an_element_on_the_same_page
+  $(window).on('load hashchange', function(){
+    
+    // First hide all content regions, then show the content-region specified in the URL hash 
+    // (or if no hash URL is found, default to first menu item)
+    $('.content-region').hide();
+    
+    // Remove any active classes on the main-menu
+    $('.main-menu a').removeClass('active');
+    var region = location.hash.toString() || $('.main-menu a:first').attr('href');
+    
+    // Now show the region specified in the URL hash
+    $(region).show();
+    
+    // Highlight the menu link associated with this region by adding the .active CSS class
+    $('.main-menu a[href="'+ region +'"]').addClass('active'); 
 
-    let isSignup = false;
+    var coll = document.getElementsByClassName("collapsible");
 
-    // Show login/signup modal
-    loginBtn.addEventListener('click', () => {
-        authModal.style.display = 'block';
-    });
 
-    // Close modal
-    closeModal.addEventListener('click', () => {
-        authModal.style.display = 'none';
-    });
+    // Alternate method: Use AJAX to load the contents of an external file into a div based on URL fragment
+    // This will extract the region name from URL hash, and then load [region].html into the main #content div
+    // var region = location.hash.toString() || '#first';
+    // $('#content').load(region.slice(1) + '.html')
 
-    // Toggle between login and signup
-    toggleAuth.addEventListener('click', (e) => {
-        e.preventDefault();
-        isSignup = !isSignup;
-        authTitle.innerText = isSignup ? 'Sign Up' : 'Login';
-        toggleAuth.innerHTML = isSignup ? 'Already have an account? <a href="#">Login</a>' : 'Don\'t have an account? <a href="#">Sign Up</a>';
-    });
-
-    // Handle login/signup
-    authForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
-
-        if (isSignup) {
-            // Store user credentials
-            localStorage.setItem(username, password);
-            alert('Account created! Please log in.');
-        } else {
-            // Authenticate user
-            const storedPassword = localStorage.getItem(username);
-            if (storedPassword === password) {
-                localStorage.setItem('loggedInUser', username);
-                updateUI();
-            } else {
-                alert('Invalid username or password!');
-            }
-        }
-        authModal.style.display = 'none';
-    });
-
-    // Logout function
-    logoutBtn.addEventListener('click', () => {
-        localStorage.removeItem('loggedInUser');
-        updateUI();
-    });
-
-    // Update UI based on login state
-    function updateUI() {
-        const loggedInUser = localStorage.getItem('loggedInUser');
-        if (loggedInUser) {
-            userGreeting.innerText = `Welcome, ${loggedInUser}`;
-            loginBtn.style.display = 'none';
-            logoutBtn.style.display = 'inline-block';
-        } else {
-            userGreeting.innerText = '';
-            loginBtn.style.display = 'inline-block';
-            logoutBtn.style.display = 'none';
-        }
-    }
-
-    updateUI();
-});
+  });
+  
+})(jQuery);
+ 
