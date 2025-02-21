@@ -1,72 +1,633 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seoul Caliber LLC</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <a href="/" class="logo">Seoul Caliber LLC</a>
-            <nav>
-                <ul>
-                    <li><a href="#guns">Guns & NFA</a></li>
-                    <li><a href="#mags">Mags</a></li>
-                    <li><a href="#ammo">Ammo</a></li>
-                    <li><a href="#parts">Parts & Accessories</a></li>
-                    <li><a href="#optics">Sights & Optics</a></li>
-                    <li><a href="#gear">Gear</a></li>
-                    <li><a href="#brands">Brands</a></li>
-                    <li><a href="#support">Support</a></li>
-                </ul>
-            </nav>
-            <div class="header-extras">
-                <span id="user-greeting"></span>
-                <button id="login-btn">Login</button>
-                <button id="logout-btn" style="display: none;">Logout</button>
-            </div>
-        </div>
-    </header>
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+      <title>SEOUL CALIBER LLC</title>
+    <meta name="description" content="Welcome to Seoul Caliber LLC">
+    <meta name="author" content="b">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <link rel="icon" type="image/png" href="favicon.png"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <main>
-        <section id="hero">
-            <div class="container">
-                <h1>Welcome to Seoul Caliber LLC</h1>
-                <p>Your trusted source for firearms and accessories.</p>
-            </div>
-        </section>
-        <section id="featured-products">
-            <div class="container">
-                <h2>Featured Products</h2>
-                <div class="product-grid">
-                    <!-- Product items will be inserted here -->
-                </div>
-            </div>
-        </section>
-    </main>
+ <style>
 
-    <!-- Login/Signup Modal -->
-    <div id="auth-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="auth-title">Login</h2>
-            <form id="auth-form" action="/login" method="POST">
-                <input type="text" id="username" name="username" placeholder="Username" required>
-                <input type="password" id="password" name="password" placeholder="Password" required>
-                <button type="submit">Submit</button>
-            </form>
-            <p id="toggle-auth">Don't have an account? <a href="/signup">Sign Up</a></p>
+</style>
+	  
+    <style>
+        .container {
+            display: flex;
+            align-items: center; 
+        }
+        .container img {
+            margin-right: 10px; 
+        }
+    </style>
+<style>
+img {
+  float: left;
+}
+
+</style>
+
+    
+    <!-- Stylesheets , user-scalable=no -->
+    <!-- Reset default styles and add support for google fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+   
+    <!-- Custom styles -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery -->
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+
+
+    <!-- Want to add Bootstrap? -->
+    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #777;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #262626;
+}
+
+  footer {
+  text-align: center;
+  padding: 3px;
+  background-color: darkgray;
+  color: black;
+}
+</style>   
+  </head>
+  
+  <body>
+<div class="container">
+    <header id="header">
+      <img src="headersmaller.png"  alt="Logo" class="logo">
+      </div>
+      
+      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
+      <ul class="main-menu">
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+	 <li><a href="#shop">shop</a></li>     
+        <li><a href="#services">services</a></li>
+         <li><a href="#policies">policies</a></li>
+	         <li><a href="#faq">faq</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>                 
+    </header>
+
+
+    <div id="container">
+      <div class="inner">
+        <div id="content"> 
+          
+          <div id="home" class="content-region hide">
+            <h2>Home</h2>
+            <p>We are Seoul Caliber LLC. Your #1 Sporting and Recreational Goods Retailer and Merchant Wholesale Distributor specializing in Firearms and all shooting related activites.. We provide local services and products to Law Enforcement, Security, Military, Veterans, and our local community. <br> Out of state and looking for the best deal online?? We ship!! <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>  
+		    
+		    
+		    <b>February 2025: Website is currently in progress. Check back soon for updates!</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+
+<p style="color:red;"><b><u>IMPORTANT UPDATES</u></b></p>
+<ul><b>SB23-169:</b> Effective 08/07/2023, Previous law allowed a person 18 tyears of age or older possess or purchase a firearm (shotgun or longun). This law increased age to legally purchase a firearm to 21 years of age or older. Exceptions included active members of US armed forces or peace office/ certified P.O.S.T. board. See https://leg.colorado.gov/bills/sb23-169 for additional details.
+</ul>
+<ul><b>HB24-1348:</b> Starting 01/01/2025, Secure firearm storage in vehicle. Handguns in an unattended vehicle must be stored in a locked hard-sided container that is placed out of plain view and the container is in a locked vehicle. See https://leg.colorado.gov/bills/hb24-1348 for additional details.
+</ul>
+<ul><b>HB24-1349:</b> Starting 04/01/2025, New 6.5% excise tax on the net taxable sales of firearm dealers, firearms manufacturers, and ammunition vendors (vendors) from the retail sale of any firearm, firearm precursor part, or ammunition in Colorado. See https://leg.colorado.gov/bills/hb24-1349 for additional details.
+</ul>
+<ul><b>HB24-1353:</b> Starting 07/01/2025, Firearm dealer permit (state permit) required in order to engage in the business of dealing in firearms other than destructive devices in Colorado. See https://leg.colorado.gov/bills/hb24-1353 for additional details.
+</ul>
+<ul><b>HB24-1174:</b> Starting 07/01/2025, the requirements for obtaining a concealed carry permit will change mandating mandates that training classes to qualify for a concealed carry permit offer at least eight hours of instruction, including a live-fire test where participants shoot at least 50 rounds. Passing the live-fire test, as well as a written exam, will also be mandatory to get a concealed carry permit. See https://leg.colorado.gov/bills/hb24-1174 for additional details. 
+</ul>
+		    
+
+
+
+            </p>
+          </div>
+          
+          <div id="about" class="content-region hide">
+            <h2>About</h2>
+            <p>
+              Located in the most diverse city in the state of Colorado, we are the most diverse firearm retailer! We offer a comprehensive range of services including Firearm Transfers and Sales, Gunsmithing, Consultations, Safety Training, and Notary Services in English, Spanish, Korean, Vietmanese, and Mandarin. <br>
+		    <h1><u>Meet the Team</u></h1>
+		    
+		   <b>Coming Soon..</b> 
+
+            </p>
+          </div>
+
+
+
+<div id="shop" class="content-region hide">
+	<h2>Firearms (In Stock)</h2>
+	<p><b>NOTE:</b>All firearms, magazines, receivers and restricted law enforcement items are sold and shipped in accordance with all existing federal, state and local laws and regulations. Many of the firearms, magazines and parts for sale on this website in  may be restricted or prohibited in your area. For example, per CRS 18-12-302, firearms with magazine capacity exceeding fifteen (15) rounds will not be sold locally in the state of Colorado. Please check your local and state regulations before ordering. For additional questions, please email info@seoulcaliber.com.
+	</p>
+<div class="container text-center">
+<h1>Product card</h1>
+  <span>Create With <i class="zmdi zmdi-favorite red"></i>  By: <strong>Deni Kurniawan</strong> From: <i><a href="http://blog.wingerdstok.com" class="wsk-btn">Wingerdstok</a></i></span>
+</div>
+
+
+<div class="shell">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="https://3.bp.blogspot.com/-eDeTttUjHxI/WVSvmI-552I/AAAAAAAAAKw/0T3LN6jABKMyEkTRUUQMFxpe6PLvtcMMwCPcBGAYYCw/s1600/001-culture-clash-matthew-gianoulis.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>Glock 19</span>
+            </div>
+            <div class="title-product">
+              <h3>9mm</h3>
+            </div>
+            <div class="description-prod">
+              <p>New in stock with 3 magzines</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">$550</span></div>
+              <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img"><img src="https://1.bp.blogspot.com/-b-2SgNUrFHg/WVSvmewWqgI/AAAAAAAAAK0/1K4YCcbYjhokHwV_IgiVJN9mEnQoWunIwCPcBGAYYCw/s1600/fashion-portrait-nicole-6347.jpg" alt="Product" class="img-responsive" /></div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>Introvert</span>
+            </div>
+            <div class="title-product">
+              <h3>10mm</h3>
+            </div>
+            <div class="description-prod">
+              <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Rp500.000</span></div>
+              <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img"><img src="https://1.bp.blogspot.com/-XL_Ba-178Fo/WVSvm5AbApI/AAAAAAAAAK4/X5109HTqUiAhPjbmz4NFVHcpL7ZWe6T3ACPcBGAYYCw/s1600/wow-29.jpg" alt="Product" class="img-responsive" /></div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>Beauty</span>
+            </div>
+            <div class="title-product">
+              <h3>My face not my heart</h3>
+            </div>
+            <div class="description-prod">
+              <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Rp500.000</span></div>
+              <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img"><img src="https://3.bp.blogspot.com/-iUes8qr4uC8/WVSvl6Wf_fI/AAAAAAAAAKs/JiTUUVvdbqEC_QGGaQhuVJiezIN3LIqEgCPcBGAYYCw/s1600/IMG_5367-bp.jpg" alt="Product" class="img-responsive" /></div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>Drama</span>
+            </div>
+            <div class="title-product">
+              <h3>My face not my heart cvf ggf gfg g</h3>
+            </div>
+            <div class="description-prod">
+              <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Rp500.000</span></div>
+              <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Seoul Caliber LLC. All rights reserved.</p>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="https://3.bp.blogspot.com/-iUes8qr4uC8/WVSvl6Wf_fI/AAAAAAAAAKs/JiTUUVvdbqEC_QGGaQhuVJiezIN3LIqEgCPcBGAYYCw/s1600/IMG_5367-bp.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>Ethnic</span>
+            </div>
+            <div class="title-product">
+              <h3>My face not my heart</h3>
+            </div>
+            <div class="description-prod">
+              <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Rp500.000</span></div>
+              <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img"><img src="https://1.bp.blogspot.com/-b-2SgNUrFHg/WVSvmewWqgI/AAAAAAAAAK0/1K4YCcbYjhokHwV_IgiVJN9mEnQoWunIwCPcBGAYYCw/s1600/fashion-portrait-nicole-6347.jpg" alt="Product" class="img-responsive" /></div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>Introvert</span>
+            </div>
+            <div class="title-product">
+              <h3>My face not my heart</h3>
+            </div>
+            <div class="description-prod">
+              <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Rp500.000</span></div>
+              <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img"><img src="https://1.bp.blogspot.com/-XL_Ba-178Fo/WVSvm5AbApI/AAAAAAAAAK4/X5109HTqUiAhPjbmz4NFVHcpL7ZWe6T3ACPcBGAYYCw/s1600/wow-29.jpg" alt="Product" class="img-responsive" /></div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>Beauty</span>
+            </div>
+            <div class="title-product">
+              <h3>My face not my heart</h3>
+            </div>
+            <div class="description-prod">
+              <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Rp500.000</span></div>
+              <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img"><img src="https://3.bp.blogspot.com/-iUes8qr4uC8/WVSvl6Wf_fI/AAAAAAAAAKs/JiTUUVvdbqEC_QGGaQhuVJiezIN3LIqEgCPcBGAYYCw/s1600/IMG_5367-bp.jpg" alt="Product" class="img-responsive" /></div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>Drama</span>
+            </div>
+            <div class="title-product">
+              <h3>My face not my heart cvf ggf gfg g</h3>
+            </div>
+            <div class="description-prod">
+              <p>Description Product tell me how to change playlist height size like 600px in html5 player. player good work now check this link</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Rp500.000</span></div>
+              <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <script src="scripts.js"></script>
-</body>
+
+</div>		
+		<div id="policies" class="content-region hide">
+            <h2>Policies</h2>
+              <p><b>Currently in progress</b></p>
+                
+				<button type="button" class="collapsible">CUSTOMER SERVICE</button>
+                  <div class="content">
+                  <p>If you encounter any problems with your transaction or if you have any questions about the status of your order, simply contact us: info@seoulcaliber.com
+				  </p>
+        </div>
+
+                <button type="button" class="collapsible">ORDER FULFILLMENT</button>
+                  <div class="content">
+                  <p>All orders are shipped promptly from our warehouse or in-store inventory within 3 – 10 business days using UPS, FedEx, or USPS. Tracking numbers are available for items shipped via UPS and FedEx.</p>
+                  </div>
+		    
+                <button type="button" class="collapsible">USED FIREARMS</button>
+                  <div class="content">
+                  <p>We will provide all descriptions for used items. All descriptions for used items are honest and based on actual items being offered for sale. Items being sold in this manner will be marked as such. All sales on used items are final. Photos will be provided when available.</p>
+                  </div>
+		    
+                <button type="button" class="collapsible">WEBSITE DISCLAIMER</button>
+                  <div class="content">
+                  <p>Other items available for sale not listed on this website include discontinued parts or parts for firearms no longer produced. Please contact us if you have any questions regarding parts for firearms no longer produced 
+		All items on this website are subject to change without notice. This includes item availability, one-of-a-kind items, and pricing.</p>
+                  </div>
+			
+                <button type="button" class="collapsible">PAYMENTS</button>
+                  <div class="content">
+                  <p>All internet and private party transfers are CASH only. <br>
+		  Tanigble items (Firearms, Magazines, Ammunition, Accessories) paid with credit card are subject to an additional processing fee with ID required. <br>
+		  Tanigble items (Firearms, Magazines, Ammunition, Accessories) transactions are subject to local sales tax. <br>
+		  Gunsmith and Servicing is not subject to local sales tax. <br>
+		  
+		 
+		  </p>
+                  </div>
+
+                <button type="button" class="collapsible">GENERAL FIREARM AND ACCESSORY SALES</button>
+                  <div class="content">
+                  <p>All firearms, magazines, receivers and restricted law enforcement items are sold and shipped in accordance with all existing federal, state and local laws and regulations. Many of the firearms, magazines and parts for sale on this website may be restricted or prohibited in your area. Please check your local and state regulations before ordering. You must be 18 or older to purchase a long gun and 21 or older to purchase a handgun per ATF rules, but state and local laws may differ and you will need to check your local laws before purchasing a firearm.<br>
+			  
+All new firearms are shipped in the original manufacturer’s box, with magazine(s), accessories and applicable warranty. Firearms requiring warranty work must be returned to the factory within 1 year of purchase for repair. Accessories and special order items not normally sold by our store will not be covered under warranty even if these products are part of an integrated firearms package, unless we have guaranteed the entire package in writing. Please contact the original manufacturer for warranty information on all accessories and special order items.</p>
+                  </div>
+          </div>
+
+		
+           <div id="services" class="content-region hide">
+            <h2>Services</h2>
+		   
+              <p><b>Consultation</b></p>
+                <button type="button" class="collapsible">Consultation</button>
+                  <div class="content">
+                  <p><ul>Are you looking to purchase your first firearm and need help?</ul>
+		      <ul>Wondering what caliber to get?</ul>
+			<ul>Unsure of the local laws and regulations?</ul>
+			  No questions are stupid questions and we are here to help. We offer a first-time consultation free of charge for 20 minutes via email, telephone, videochat, and many platforms.
+		  </p>
+                  </div>
+		   		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+      
+		   <p><b>Sales</b></p>
+                <button type="button" class="collapsible">Retail</button>
+                  <div class="content">
+                  <p>
+		 <ul>We carry most AR parts locally at our warehouse including upper and lower receivers, barrels, and more.</ul>
+		 <ul>Limited inventory on used firearms in stock, please contact us on current inventory.</ul>
+		All items are subject to sales tax.<br>  
+		  </p>
+                  </div>
+		   		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		   
+              <p><b>Transfers</b></p>
+                <button type="button" class="collapsible">Internet Transfers</button>
+                  <div class="content">
+                  <p>See an awesome deal or sale online and need it transferred locally? Ship it to us!<br>
+		Please contact us prior to placing an online order. Shoot us a text to receive a reply ASAP<br>
+		  If you place an order before contacting us or receiving a confirmation, an additional fee may be applied. <br>
+			  <b>Pricing:</b> <br>
+			  <ul>Long guns (rifle and shotguns), handguns, frames, receivers: $50 for first transfer</ul>
+			  <ul>Additional firearms (within the same transaction) are $10 each</ul>
+		  </p>
+                  </div>
+
+                <button type="button" class="collapsible">Private Transfers</button>
+                  <div class="content">
+                  <p>
+			  <ul>We accept transfers from non licensees (indivuals). However we do not release our FFL to anyone that is not a licensee. You may verify our FFL by using the ATF FFL EZ CHECK WEBSITE and entering 5-84-17025.</ul>
+			  <ul>Each individual must bring valid identification. </ul>
+			  <ul>We can provide a notarized Bill of Sale for an additional cost.</ul>
+			  Please contact us to schedule an appointment to come in and process the private transfer. <br>
+			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		  <b>Note:</b> Per Colorado HB23-1219, Waiting Period To Deliver A Firearm, Purchaser will be unable to take delivery of firearm(s) a minimum of 3 days from the time and date of completed CBI background check</p>	  
+                  </div>
+
+             
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+            
+		   <p><b>Sourcing</b></p>
+                <button type="button" class="collapsible">Sourcing</button>
+                  <div class="content">
+                  <p><ul>Is there a specific model firearm you are looking for?</ul>
+		      <ul>Do you need a specific part that is worn or replaced or just have to have?</ul>
+			<ul>Lost a pin or another part trying to DIY?</ul>
+			  We carry many replacement parts local. If we don't have it, we can find and get it. With over 50 Distributors, we will work on getting you the firearm or part you need while trying to get you the best price available. If you see a cheaper price available at another retailer local or online we will do our beat it! - don't hesitate to reach out!
+			  
+		  </p>
+                  </div>
+		   		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		   
+		     <b>Gunsmithing</b><br>
+		     Note: We do not manufacture or fully assemble frames or lower receivers. If you require a service that is not listed or have a question, please contact us!</p>
+            <button type="button" class="collapsible">Cleaning and Maintenance</button>
+            <div class="content">
+            <p><ul>
+			<li>Full Detail Cleaning</li>
+			<li>Diagnosis and Breakdown Inspection</li>
+		    <b>Please Contact us with make and model for pricing</b>
+		    
+    
+	    </ul></p>
+              </div>
+
+             <button type="button" class="collapsible">Handguns</button>
+        <div class="content">
+  <p><ul>
+<li>Basic Field Strip and Cleaning Introduction</li>
+	  <li>Sight Installation and Alignment</li>
+	  <li>OEM or Aftermarket Barrel Installation</li>
+	  <li>OEM or Aftermarket Slide Installation</li>
+	  <li>Drop-in Trigger Installation</li>
+	  <li>Magazing Extender Installation</li>
+	  <li>Extended Slide Lock Installation</li> 
+	  <li>Accessory Installation</li>
+	  <b>Please Contact us with make, model, and part service for pricing</b></li>
+  </p>
+		 </div>
+		             <button type="button" class="collapsible">AR 223/308/556/etc</button>
+        <div class="content">
+  <p><ul>
+<li>Upper Assembly</li>
+	  <li>Upper Disassembly</li>
+	  <li>Barrel Installation</li>
+	  <li>Low-profile Gas Block Pin Installation</li>
+	  <li>Gas Tube Installation</li>
+	  <li>Gas System Installation</li>
+	  <li>Stock / Buffer Installation</li>
+	  <li>Muzzle Brake / Flash Hider Installation</li> 
+	  <li>Handguard/Rail Installation</li>
+	  <li>Trigger Installation</li>
+	  <li>Magazine Catch Installation</li>
+	  <li>Bolt Catch Installation</li>
+	  <li>Trigger Guard Installation</li>
+	  <li>Pivot and/or Takedown Pin Installation</li>
+	  <li>Grip Installation</li>
+	  <li>Safety Installation</li>
+	  <li>Sight and or Scope Installation and Alignment</li>
+	  <b>Please Contact us with make, model, and part service for pricing</b>
+	  
+  </ul></p>
+</div>
+		   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+              <p><b>Notary</b></p>
+                <button type="button" class="collapsible">Notary Services</button>
+                  <div class="content">
+                  <p>
+			  <li>Gun Law and Firearm Documents</li>
+			  <li>Copy Certifications</li>
+			  <li>Bill of Sales</li>
+			  <b>Don't see what your looking for or have a notary related question? Please contact bryan@seoulcaliber.com</b>
+
+			  
+		  </p>
+                  </div>
+ 		   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+              <p><b>Shipping</b></p>
+                <button type="button" class="collapsible">Shipping Services</button>
+                  <div class="content">
+                  <p>
+			  Please contact us if you need to ship a firearm a firearm on your behalf. <br>
+			  <b>Note: We require a copy of the Receiving FFL’s license or contact information to obtain a copy of their license.</b>  
+		  </p>
+                  </div>    
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		   
+</div>
+
+		<div id="faq" class="content-region hide">
+            <h2>FAQ</h2>
+              <p><b>Currently in progress. Note: This is a general guide provided by Seoul Caliber LLC. We are not responsible for misinformation and anything provided should be confirmed as current laws and regulations are consistently changing.</b></p>
+                
+		<button type="button" class="collapsible">Can I open carry in Colorado?</button>
+                  <div class="content">
+                  <p>The actual open carrying of firearms is regulated by local county and municipal authorities. Confirmation of open carry municipal code restrictions would have to be done with those local authorities. Generally, most city municipal codes are posted on-line for review by the public.
+				  </p>
+        </div>
+
+                <button type="button" class="collapsible">Do I need to register my firearm?</button>
+                  <div class="content">
+                  <p>There is no registry in Colorado, you do not have to register your firearm. (CRS 29-11.7-102)</p>
+                  </div>
+		    
+                <button type="button" class="collapsible">What do I do to if I am denied the purchase of a firearm?</button>
+                  <div class="content">
+                  <p>We will provide you an appeal form. give you an appeal form.  Make sure the mandatory fields are filled out and follow the instructions to appeal your denial.  CBI cannot provide any information regarding your denial over the phone.</p>
+                  </div>
+		    
+                <button type="button" class="collapsible">What do I need to purchase a firearm?</button>
+                  <div class="content">
+                  <p>An acceptable form(s) of identification such as an Colorado DL or ID, Military ID. ID must have current address. If it does not have current address, a supplemental ID may be provided such as vehicle registration, valid hunting or fishing license, or waterbill. Please reach out if you have additional questions.</p>
+                  </div>
+			 
+                <button type="button" class="collapsible">Is the a background check or waiting period for firearms?</button>
+                  <div class="content">
+                  <p> A background check must be taken to purchase a firearm. This process includes filling out an application (Form 4473). Waiting period is a minimum of 3 days depending on CBI database.
+		  
+		 
+		  </p>
+                  </div>
+
+
+          </div>
+
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+             
+          
+          <div id="contact" class="content-region hide">
+            <h2>Contact</h2>
+            <p>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+              <u>For Sales, Transfers, and Gunsmithing: 
+	      </u> <br>
+		    sam@seoulcaliber.com or bryan@seoulcaliber.com <br>
+		     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+            
+		<u>For Notary and Sourcing Related questions: </u> <br>
+		    bryan@seoulcaliber.com <br>
+		     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+	     Please note, we are currently not open to the public. <br>
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+              For Appointments and other questions, please contact us at info@seoulcaliber.com or (720)515-4314. We generally will reply back within 24 hours or sooner.<br>
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		    <b>Check us out and give us a follow and like on Social Media:</b><br>
+		    <a href="https://www.facebook.com/profile.php?id=61566764888949">Facebook: Seoul Caliber LLC</a><br>
+			<a href="https://www.instagram.com/seoulcaliberllc">Instagram: Seoul Caliber LLC</a> <br>
+
+
+
+            </p>
+          </div>
+ 
+
+		
+                
+		 </div>
+		
+		 </div>		
+		 </div>
+		 </div> 
+		  
+
+
+<footer>
+	<p><b><u>Contact Us</u></b> <br>
+   11590 E 2nd Ave, Aurora, CO 80010 <br>
+	  Mon-Sat 8AM-8PM <br>
+ Text or Call: (720) 515-4314<br>
+     Email: info@seoulcaliber.com
+  </p>
+</footer>
+
+<footer>
+  <p>
+	<b>seoulcaliber.com</b> © 2025 All rights reserved. </p>
+	<div id="google_translate_element"></div>
+</footer>
+    
+    <!-- Load additional JS scripts here -->
+
+  <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+  </body>
 </html>
